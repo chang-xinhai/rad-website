@@ -6,9 +6,9 @@ Reading this as: a research project page for computer vision and robotics resear
 
 Mode: greenfield.
 
-- `DESIGN_VARIANCE: 8` because multi-view inspection benefits from an asymmetric, image-led composition.
-- `MOTION_INTENSITY: 6` because one staged reveal and section entrances can explain the visual hierarchy without turning the paper into a demo reel.
-- `VISUAL_DENSITY: 4` because benchmark facts need enough structure to scan while the paper figures still need space.
+- `DESIGN_VARIANCE: 4` because the page should read first as a serious academic artifact.
+- `MOTION_INTENSITY: 1` because research content should remain stable while reading and comparing results.
+- `VISUAL_DENSITY: 6` because the title, full authorship, affiliations, resources, and teaser belong together above the fold.
 
 ## Compact token system
 
@@ -42,7 +42,7 @@ Pure white is an explicit project requirement for the academic canvas. The page 
 
 ### Signature
 
-The hero treats the paper teaser as an inspection field: the text occupies a narrow left rail while the real multi-view gallery breaks into the wider right side. On first load, the image is revealed once from left to right. This communicates robotic scanning and establishes hierarchy without adding a fake interface.
+The hero uses a compact two-column paper-header composition: the full title, authorship, affiliations, and resources sit beside the paper teaser. It avoids poster-scale type and keeps all essential citation context visible in the first viewport.
 
 ## Wireframe
 
@@ -92,11 +92,9 @@ mobile
 
 ## Motion rationale
 
-- Hero copy and teaser reveal once to establish reading order and evoke image acquisition.
-- Section reveals use `IntersectionObserver` to communicate entry into a new evidence block.
-- Citation controls animate only for action feedback.
-- All motion changes only opacity and transform, and collapses under `prefers-reduced-motion`.
-- There is no scroll event listener, parallax, marquee, or infinite animation.
+- Content does not animate into view; figures and results remain stable for comparison.
+- Only restrained hover, focus, menu, and citation-control feedback remains.
+- There is no parallax, marquee, staged reveal, or infinite animation.
 
 ## Self-critique before build
 
@@ -120,7 +118,7 @@ The affiliation footnote also contains an unused Great Bay University index whil
 - One pure-white palette and one signal accent across the page.
 - Zero em dash or en dash characters in visible page copy.
 - No invented claims, results, testimonials, logos, or media.
-- Hero headline stays within two lines at desktop; summary stays under 20 words; actions stay visible in the first viewport.
+- Hero keeps the complete title, all authors, affiliations, resources, and teaser visible in the first desktop viewport.
 - One-line desktop navigation, visible focus rings, semantic headings, alt text, keyboard controls, and reduced motion.
 - Real teaser, pipeline, annotation, dataset, and qualitative figures.
 - Explicit mobile collapse for every asymmetric layout.
