@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F4F6F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101418" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/rad-website/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/rad-website/assets/style.css">
+  <title>Page not found | RAD</title>
+  <style>
+    .not-found { min-height: 100dvh; display: grid; place-items: center; padding: 32px; }
+    .not-found-inner { width: min(720px, 100%); }
+    .not-found-code { color: var(--signal); font: 700 clamp(5rem, 18vw, 10rem)/.8 var(--display); letter-spacing: -.08em; }
+    .not-found h1 { max-width: 12ch; margin-top: 28px; font: 650 clamp(2.4rem, 7vw, 5rem)/1 var(--display); letter-spacing: -.06em; }
+    .not-found p { max-width: 44ch; margin-top: 20px; color: var(--muted); }
+    .not-found .button { margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <main class="not-found">
+    <div class="not-found-inner">
+      <div class="not-found-code" aria-hidden="true">404</div>
+      <h1>This viewpoint is not in the scan.</h1>
+      <p>The requested page does not exist. Return to the RAD project page for the paper, dataset, benchmark, and code.</p>
+      <a class="button button-primary" href="/rad-website/">Return to RAD</a>
+    </div>
+  </main>
+</body>
+</html>

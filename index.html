@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F6F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101418" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="RAD is a robot-captured multi-view benchmark for pose-agnostic anomaly detection across 13 object categories and 68 viewpoints.">
+  <meta name="author" content="Kaichen Zhou, Xinhai Chang, Taewhan Kim, Jiadong Zhang, Yang Cao, Chufei Peng, Fangneng Zhan, Hao Zhao, Hao Dong, Kai Ming Ting, Ye Zhu">
+  <meta name="keywords" content="RAD, realistic anomaly detection, pose-agnostic anomaly detection, robotic inspection, multi-view benchmark, computer vision">
+  <meta name="citation_title" content="RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection">
+  <meta name="citation_author" content="Kaichen Zhou">
+  <meta name="citation_author" content="Xinhai Chang">
+  <meta name="citation_author" content="Taewhan Kim">
+  <meta name="citation_author" content="Jiadong Zhang">
+  <meta name="citation_author" content="Yang Cao">
+  <meta name="citation_author" content="Chufei Peng">
+  <meta name="citation_author" content="Fangneng Zhan">
+  <meta name="citation_author" content="Hao Zhao">
+  <meta name="citation_author" content="Hao Dong">
+  <meta name="citation_author" content="Kai Ming Ting">
+  <meta name="citation_author" content="Ye Zhu">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_arxiv_id" content="2410.00713">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2410.00713">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RAD">
+  <meta property="og:title" content="RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection">
+  <meta property="og:description" content="A robot-captured benchmark for anomaly detection under pose variation, reflective materials, and viewpoint-dependent defect visibility.">
+  <meta property="og:url" content="https://chang-xinhai.github.io/rad-website/">
+  <meta property="og:image" content="https://chang-xinhai.github.io/rad-website/assets/figures/teaser.jpg">
+  <meta property="og:image:width" content="1890">
+  <meta property="og:image:height" content="1063">
+  <meta property="og:image:alt" content="RAD gallery showing thirteen objects captured by a robot from multiple viewpoints">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RAD: Realistic Anomaly Detection">
+  <meta name="twitter:description" content="A realistic multi-view benchmark for pose-agnostic anomaly detection.">
+  <meta name="twitter:image" content="https://chang-xinhai.github.io/rad-website/assets/figures/teaser.jpg">
+  <link rel="canonical" href="https://chang-xinhai.github.io/rad-website/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/figures/teaser.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection",
+    "url": "https://arxiv.org/abs/2410.00713",
+    "sameAs": "https://doi.org/10.48550/arXiv.2410.00713",
+    "datePublished": "2024",
+    "author": [
+      {"@type": "Person", "name": "Kaichen Zhou"},
+      {"@type": "Person", "name": "Xinhai Chang"},
+      {"@type": "Person", "name": "Taewhan Kim"},
+      {"@type": "Person", "name": "Jiadong Zhang"},
+      {"@type": "Person", "name": "Yang Cao"},
+      {"@type": "Person", "name": "Chufei Peng"},
+      {"@type": "Person", "name": "Fangneng Zhan"},
+      {"@type": "Person", "name": "Hao Zhao"},
+      {"@type": "Person", "name": "Hao Dong"},
+      {"@type": "Person", "name": "Kai Ming Ting"},
+      {"@type": "Person", "name": "Ye Zhu"}
+    ]
+  }
+  </script>
+  <title>RAD | Realistic Multi-View Anomaly Detection</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="wordmark" href="#top" aria-label="RAD home">RAD</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#abstract">Abstract</a>
+        <a href="#dataset">Dataset</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="#results">Results</a>
+        <a href="#citation">Citation</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme">Dark</button>
+        <a class="nav-link" href="https://arxiv.org/abs/2410.00713" target="_blank" rel="noreferrer">Paper</a>
+        <a class="nav-link nav-link-strong" href="https://github.com/kaichen-z/RAD" target="_blank" rel="noreferrer">Code</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid page-shell">
+        <div class="hero-copy">
+          <h1 id="hero-title"><span class="hero-mark">RAD</span><span class="hero-title">A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection</span></h1>
+          <p class="hero-summary">Robot-captured inspection across unknown viewpoints, reflective materials, geometric symmetry, and four realistic defect types.</p>
+          <div class="hero-actions" aria-label="Project resources">
+            <a class="button button-primary" href="https://arxiv.org/abs/2410.00713" target="_blank" rel="noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://github.com/kaichen-z/RAD" target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <div class="hero-image-wrap">
+            <img src="assets/figures/teaser.jpg" width="1890" height="1063" alt="RAD gallery with thirteen industrial and everyday objects observed by a robot from multiple viewpoints" fetchpriority="high" decoding="async">
+          </div>
+          <figcaption>Thirteen categories captured from 68 robot viewpoints under uncontrolled illumination.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="credits page-shell reveal" aria-labelledby="authors-heading">
+      <h2 class="sr-only" id="authors-heading">Authors and affiliations</h2>
+      <div class="author-list">
+        <span>Kaichen Zhou<sup>1*</sup></span>
+        <span>Xinhai Chang<sup>2*</sup></span>
+        <span>Taewhan Kim<sup>2*</sup></span>
+        <span>Jiadong Zhang<sup>3*</sup></span>
+        <span>Yang Cao<sup>8</sup></span>
+        <span>Chufei Peng<sup>5</sup></span>
+        <span>Fangneng Zhan<sup>1</sup></span>
+        <span>Hao Zhao<sup>6</sup></span>
+        <span>Hao Dong<sup>2</sup></span>
+        <span>Kai Ming Ting<sup>7</sup></span>
+        <span>Ye Zhu<sup>8</sup></span>
+      </div>
+      <p class="equal-note">* Equal contribution. Correspondence: Ye Zhu.</p>
+      <p class="institution-list">Massachusetts Institute of Technology, Peking University, Carnegie Mellon University, Great Bay University, Harvard University, Tsinghua University, Nanjing University, Deakin University</p>
+    </section>
+
+    <section class="abstract-section section page-shell reveal" id="abstract" aria-labelledby="abstract-heading">
+      <div class="section-heading">
+        <h2 id="abstract-heading">Inspection outside the lab</h2>
+      </div>
+      <div class="abstract-layout">
+        <p class="abstract-lead">Anomaly detection is a core capability for robotic perception and industrial inspection, yet most existing benchmarks are collected under controlled conditions with fixed viewpoints and stable illumination, failing to reflect real deployment scenarios.</p>
+        <div class="abstract-body">
+          <p>We introduce RAD (Realistic Anomaly Detection), a robot-captured, multi-view dataset designed to stress pose variation, reflective materials, and viewpoint-dependent defect visibility. RAD covers 13 everyday object categories and four realistic defect types: scratched, missing, stained, and squeezed. Each object is captured from 68 robot viewpoints under uncontrolled lighting.</p>
+          <p>We benchmark a wide range of state-of-the-art approaches, including 2D feature-based methods, 3D reconstruction pipelines, and vision-language models under a pose-agnostic setting. Mature 2D feature-embedding methods consistently outperform recent 3D and VLM-based approaches at the image level, while the gap narrows for pixel-level localization. Reflective surfaces, geometric symmetry, and sparse viewpoint coverage remain critical open problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts page-shell reveal" aria-label="Dataset at a glance">
+      <div class="fact fact-wide">
+        <strong>4,287</strong>
+        <span>RGB images</span>
+        <small>1,224 normal, 3,063 abnormal</small>
+      </div>
+      <div class="fact">
+        <strong>13</strong>
+        <span>object categories</span>
+      </div>
+      <div class="fact">
+        <strong>68</strong>
+        <span>robot viewpoints</span>
+      </div>
+      <div class="fact">
+        <strong>4</strong>
+        <span>defect types</span>
+      </div>
+    </section>
+
+    <section class="dataset-section section" id="dataset" aria-labelledby="dataset-heading">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <h2 id="dataset-heading">A robot moves. The object stays.</h2>
+          <p>Dense views expose appearance changes that fixed-camera datasets leave out.</p>
+        </div>
+
+        <div class="capture-layout reveal">
+          <div class="capture-copy">
+            <p>RAD uses a Franka Emika Panda robotic arm with an Intel RealSense D415 RGB-D camera at 1280 × 720 resolution. The camera records each object from 68 predefined viewpoints spanning a full 360° rotation.</p>
+            <dl class="capture-specs">
+              <div><dt>Capture</dt><dd>Single moving sensor</dd></div>
+              <div><dt>Release</dt><dd>RGB images and camera poses</dd></div>
+              <div><dt>Conditions</dt><dd>Uncontrolled illumination</dd></div>
+              <div><dt>Defects</dt><dd>Missing, stained, scratched, squeezed</dd></div>
+            </dl>
+            <div class="dataset-links" aria-label="Dataset downloads">
+              <a class="text-link" href="https://drive.google.com/file/d/1p3v2FeNlHinXFCTZzZujhYhCGUiOL38G/view?usp=drive_link" target="_blank" rel="noreferrer">Download with masks <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://drive.google.com/file/d/1cPeHh69vErvC3yZSejyxU4SNK9fVlJWL/view?usp=drive_link" target="_blank" rel="noreferrer">Download without masks <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="paper-figure annotation-figure">
+            <img src="assets/figures/annotation.png" width="2400" height="1350" alt="Annotation procedure comparing a defective object with normal references to identify missing components" loading="lazy" decoding="async">
+            <figcaption>Missing components are annotated by comparing defective images with corresponding normal views.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="paper-figure statistics-figure reveal">
+          <img src="assets/figures/dataset-statistics.png" width="1954" height="1062" alt="RAD statistics across object categories and missing, normal, squeezed, scratched, and stained samples" loading="lazy" decoding="async">
+          <figcaption>Category-level defect counts, overall defect distribution, and pixel-wise anomaly ratios.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="benchmark-section section page-shell" id="benchmark" aria-labelledby="benchmark-heading">
+      <div class="section-heading reveal">
+        <h2 id="benchmark-heading">One benchmark, three method families</h2>
+        <p>All methods are evaluated for image-level classification and pixel-level localization under unknown test poses.</p>
+      </div>
+
+      <figure class="paper-figure pipeline-figure reveal">
+        <img src="assets/figures/pipeline.png" width="1921" height="936" alt="RAD benchmark pipeline from robotic data collection and annotation to 2D, 3D, and vision-language models" loading="lazy" decoding="async">
+        <figcaption>RAD connects robotic multi-view collection and fine-grained annotation to 2D, 3D, and VLM evaluation.</figcaption>
+      </figure>
+
+      <div class="method-map reveal">
+        <article class="method method-feature">
+          <h3>2D feature-based</h3>
+          <p>Eight unsupervised methods plus three CLIP-based zero-shot variants, evaluated with standard Anomalib configurations where applicable.</p>
+          <p class="method-list">CFlow, EfficientAD, FastFlow, PaDiM, PatchCore, Reverse Distillation, STFPM, UFlow, WinCLIP, AdaCLIP, VCPCLIP</p>
+        </article>
+        <article class="method method-3d">
+          <h3>3D reconstruction</h3>
+          <p>SplatPose and PIAD build object-centric 3D Gaussian Splatting representations using COLMAP-estimated camera poses.</p>
+        </article>
+        <article class="method method-vlm">
+          <h3>Vision-language</h3>
+          <p>Qwen2.5-VL and ChatGPT-4o classify images, predict anomaly boxes, and convert boxes into masks for pixel evaluation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="results-section section" id="results" aria-labelledby="results-heading">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <h2 id="results-heading">2D leads detection. Localization is closer.</h2>
+          <p>Reported mean AUROC from the v4 paper tables.</p>
+        </div>
+
+        <div class="result-highlights reveal">
+          <div class="result-primary">
+            <span>Image-level</span>
+            <strong>0.833</strong>
+            <p>PatchCore reports the highest mean image-level AUROC, followed by EfficientAD at 0.803.</p>
+          </div>
+          <div class="result-secondary">
+            <span>Pixel-level</span>
+            <strong>0.987</strong>
+            <p>VCPCLIP reports the highest mean pixel-level AUROC. CFlow, Reverse Distillation, and PIAD each report 0.984.</p>
+          </div>
+        </div>
+
+        <div class="table-shell reveal" tabindex="0" role="region" aria-label="Representative mean AUROC results">
+          <table>
+            <caption>Representative mean AUROC on RAD</caption>
+            <thead>
+              <tr><th scope="col">Method</th><th scope="col">Family</th><th scope="col">Image</th><th scope="col">Pixel</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">PatchCore</th><td>Feature</td><td class="best">0.833</td><td>0.978</td></tr>
+              <tr><th scope="row">EfficientAD</th><td>Feature</td><td>0.803</td><td>0.940</td></tr>
+              <tr><th scope="row">VCPCLIP</th><td>Zero-shot</td><td>0.663</td><td class="best">0.987</td></tr>
+              <tr><th scope="row">SplatPose</th><td>3D</td><td>0.524</td><td>0.977</td></tr>
+              <tr><th scope="row">PIAD</th><td>3D</td><td>0.634</td><td>0.984</td></tr>
+              <tr><th scope="row">Qwen2.5-VL</th><td>VLM</td><td>0.305</td><td>0.538</td></tr>
+              <tr><th scope="row">ChatGPT-4o</th><td>VLM</td><td>0.517</td><td>0.517</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure class="paper-figure qualitative-figure reveal">
+          <img src="assets/figures/qualitative.png" width="2134" height="1200" alt="Pixel-wise anomaly localization results for Bowl and Spraybottle across multiple baseline methods" loading="lazy" decoding="async">
+          <figcaption>Ground truth and pixel-wise predictions for Bowl and Spraybottle across representative baselines.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="citation-section section page-shell" id="citation" aria-labelledby="citation-heading">
+      <div class="section-heading reveal">
+        <h2 id="citation-heading">Cite RAD</h2>
+        <p>If RAD supports your research, cite the arXiv paper.</p>
+      </div>
+      <div class="citation-layout reveal">
+        <pre id="bibtex"><code>@misc{zhou2024rad,
+  title   = {RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection},
+  author  = {Zhou, Kaichen and Chang, Xinhai and Kim, Taewhan and Zhang, Jiadong and Cao, Yang and Peng, Chufei and Zhan, Fangneng and Zhao, Hao and Dong, Hao and Ting, Kai Ming and Zhu, Ye},
+  year    = {2024},
+  eprint  = {2410.00713},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi     = {10.48550/arXiv.2410.00713},
+  url     = {https://arxiv.org/abs/2410.00713}
+}</code></pre>
+        <div class="citation-actions">
+          <button class="button button-primary copy-button" type="button" data-copy="#bibtex">Copy BibTeX</button>
+          <a class="text-link" href="https://doi.org/10.48550/arXiv.2410.00713" target="_blank" rel="noreferrer">Open DOI <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-grid">
+      <div>
+        <a class="footer-mark" href="#top">RAD</a>
+        <p>Realistic multi-view anomaly detection for robotic inspection.</p>
+      </div>
+      <div class="footer-links" aria-label="Project links">
+        <a href="https://arxiv.org/abs/2410.00713" target="_blank" rel="noreferrer">Paper</a>
+        <a href="https://github.com/kaichen-z/RAD" target="_blank" rel="noreferrer">Code</a>
+        <a href="https://drive.google.com/file/d/1p3v2FeNlHinXFCTZzZujhYhCGUiOL38G/view?usp=drive_link" target="_blank" rel="noreferrer">Dataset</a>
+        <a href="https://chang-xinhai.github.io/rad-website/">Project page</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
