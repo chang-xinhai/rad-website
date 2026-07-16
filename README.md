@@ -8,7 +8,7 @@ Official project page for **RAD: A Realistic Multi-View Benchmark for Pose-Agnos
 
 RAD is a robot-captured, multi-view benchmark for pose-agnostic anomaly detection. It contains 4,287 RGB images across 13 object categories, 68 predefined robot viewpoints, and four defect types: scratched, missing, stained, and squeezed.
 
-The website is a dependency-free static site built with semantic HTML, CSS, and JavaScript. It supports light and dark themes, responsive layouts, visible keyboard focus, reduced motion, and GitHub Pages deployment.
+The website is a dependency-free static site built with semantic HTML, CSS, and JavaScript. It uses a pure-white academic canvas with responsive layouts, visible keyboard focus, reduced motion, and GitHub Pages deployment.
 
 ## Local preview
 
@@ -26,7 +26,7 @@ All scientific claims, author order, benchmark values, and paper figures are sou
 
 The v4 source has an image-count inconsistency: the dataset prose states 5,848, while the category table and comparison table both resolve to 1,224 normal plus 3,063 abnormal images, or 4,287 total. The website uses the internally consistent table-derived total.
 
-The author superscripts are preserved from `root.tex`. Institutions are shown as an unnumbered collaboration list because the source affiliation footnote includes a conflicting unused index.
+Only the unambiguous equal-contribution and corresponding-author markers are shown. Institutions are presented as an unnumbered collaboration list because the source affiliation footnote includes a conflicting unused index.
 
 ## Citation
 

@@ -14,14 +14,14 @@ Mode: greenfield.
 
 ### Color
 
-| Token | Light | Dark | Purpose |
-| --- | --- | --- | --- |
-| Canvas | `#FFFFFF` | `#101418` | Pure white, explicitly light by default |
-| Surface | `#F7F7F5` | `#192027` | Quiet inset grouping without large color blocks |
-| Ink | `#1D1D1C` | `#ECF0F3` | Primary text |
-| Muted | `#65635F` | `#A7B0B8` | Secondary text |
-| Rule | `#DEDED9` | `#35404A` | Structural separators |
-| Signal | `#B83E38` | `#DE706A` | The one accent, tied to anomaly marks |
+| Token | Value | Purpose |
+| --- | --- | --- |
+| Canvas | `#FFFFFF` | Pure white academic canvas |
+| Surface | `#F7F7F5` | Quiet inset grouping without large color blocks |
+| Ink | `#1D1D1C` | Primary text |
+| Muted | `#65635F` | Secondary text |
+| Rule | `#DEDED9` | Structural separators |
+| Signal | `#B83E38` | The one accent, tied to anomaly marks |
 
 Pure white is an explicit project requirement for the academic canvas. The page still avoids pure black, neon glow, and multi-accent gradients.
 
@@ -30,7 +30,7 @@ Pure white is an explicit project requirement for the academic canvas. The page 
 - Display: `Iowan Old Style`, then `Palatino`, `Georgia`, or a platform serif. It is reserved for paper titles, section headings, abstract statements, and benchmark numbers.
 - Body and UI: `Avenir Next`, then `Helvetica Neue` or a platform sans-serif, for technical clarity.
 - Utility and data: `SFMono-Regular`, then `IBM Plex Mono` or platform monospace.
-- One type family carries the page. Monospace is reserved for metrics, code, and metadata.
+- The serif and sans-serif roles remain consistent. Monospace is reserved for metrics, code, and metadata.
 
 ### Layout and shape
 
@@ -75,7 +75,7 @@ desktop
 
 mobile
 +---------------------------+
-| compact nav + theme        |
+| compact nav                |
 | title and actions          |
 | teaser                     |
 | abstract                   |
@@ -94,7 +94,7 @@ mobile
 
 - Hero copy and teaser reveal once to establish reading order and evoke image acquisition.
 - Section reveals use `IntersectionObserver` to communicate entry into a new evidence block.
-- Theme and citation controls animate only for action feedback.
+- Citation controls animate only for action feedback.
 - All motion changes only opacity and transform, and collapses under `prefers-reduced-motion`.
 - There is no scroll event listener, parallax, marquee, or infinite animation.
 
@@ -113,11 +113,11 @@ The page uses `/paper` from arXiv v4 as the factual source. The title and author
 
 The paper source has one count conflict. `Latex/3_dataset.tex` states 5,848 images, while `Table/dataset_comparsion.tex` and the sum of all rows in `Table/data_statistic.tex` both yield 1,224 normal plus 3,063 abnormal, or 4,287 total. The website uses the internally consistent table-derived total of 4,287.
 
-The affiliation footnote also contains an unused Great Bay University index while the author list maps Yang Cao to superscript 8. The website preserves the author superscripts from `root.tex` and presents the institutions as an unnumbered collaboration list to avoid introducing a false mapping.
+The affiliation footnote also contains an unused Great Bay University index while the author list maps Yang Cao to superscript 8. The website therefore shows only the unambiguous equal-contribution and corresponding-author markers, and presents institutions as an unnumbered collaboration list.
 
 ## Final pre-flight target
 
-- One palette and one signal accent across both themes.
+- One pure-white palette and one signal accent across the page.
 - Zero em dash or en dash characters in visible page copy.
 - No invented claims, results, testimonials, logos, or media.
 - Hero headline stays within two lines at desktop; summary stays under 20 words; actions stay visible in the first viewport.
