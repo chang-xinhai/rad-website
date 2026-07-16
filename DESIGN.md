@@ -16,14 +16,14 @@ Mode: greenfield.
 
 | Token | Light | Dark | Purpose |
 | --- | --- | --- | --- |
-| Canvas | `#FCFCFA` | `#101418` | Academic warm white, explicitly light by default |
-| Surface | `#F4F3EF` | `#192027` | Figure frames and quiet grouping |
+| Canvas | `#FFFFFF` | `#101418` | Pure white, explicitly light by default |
+| Surface | `#F7F7F5` | `#192027` | Quiet inset grouping without large color blocks |
 | Ink | `#1D1D1C` | `#ECF0F3` | Primary text |
 | Muted | `#65635F` | `#A7B0B8` | Secondary text |
-| Rule | `#D8D6D0` | `#35404A` | Structural separators |
+| Rule | `#DEDED9` | `#35404A` | Structural separators |
 | Signal | `#B83E38` | `#DE706A` | The one accent, tied to anomaly marks |
 
-No pure black, pure white, neon glow, or multi-accent gradients.
+Pure white is an explicit project requirement for the academic canvas. The page still avoids pure black, neon glow, and multi-accent gradients.
 
 ### Type
 
@@ -34,9 +34,9 @@ No pure black, pure white, neon glow, or multi-accent gradients.
 
 ### Layout and shape
 
-- Maximum reading width: 1320 px.
+- Maximum reading width: 1100 px, leaving clear side margins on desktop.
 - Desktop: asymmetric 12-column grid. Mobile below 768 px: strict single column.
-- Media and content surfaces: 14 px corners. Buttons: full pill. The distinction is documented and consistent.
+- Media and content surfaces: 14 px corners. Paper figures sit inside a white mat with 12 px inset space, a neutral hairline, and a restrained shadow. Buttons remain full pill.
 - Cards are used only for benchmark hierarchy. Most grouping uses whitespace and one-sided rules.
 - Z-index scale: base 0, sticky navigation 20, skip link 40.
 

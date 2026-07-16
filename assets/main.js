@@ -16,7 +16,7 @@
     const label = `${nextTheme[0].toUpperCase()}${nextTheme.slice(1)}`;
     themeButton.textContent = label;
     themeButton.setAttribute('aria-label', `Switch to ${nextTheme} mode`);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', currentTheme === 'dark' ? '#101418' : '#FCFCFA');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', currentTheme === 'dark' ? '#101418' : '#FFFFFF');
   };
 
   const savedTheme = localStorage.getItem('rad-theme');

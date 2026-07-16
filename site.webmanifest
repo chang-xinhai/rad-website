@@ -4,8 +4,8 @@
   "description": "A realistic multi-view benchmark for pose-agnostic anomaly detection.",
   "start_url": "/rad-website/",
   "display": "standalone",
-  "background_color": "#FCFCFA",
-  "theme_color": "#FCFCFA",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "icons": [
     {
       "src": "assets/icons/favicon.svg",
