@@ -210,7 +210,7 @@
         <article class="method method-feature">
           <h3>2D feature-based</h3>
           <p>Eight unsupervised methods plus three CLIP-based zero-shot variants, evaluated with standard Anomalib configurations where applicable.</p>
-          <p class="method-list">CFlow, EfficientAD, FastFlow, PaDiM, PatchCore, Reverse Distillation, STFPM, UFlow, WinCLIP, AdaCLIP, VCPCLIP</p>
+          <p class="method-list">CFlow, EfficientAD, FastFlow, PaDiM, PatchCore, Reverse Distillation, STFPM, UFlow, WinCLIP, AdaCLIP, VCP-CLIP</p>
         </article>
         <article class="method method-3d">
           <h3>3D reconstruction</h3>
@@ -218,7 +218,7 @@
         </article>
         <article class="method method-vlm">
           <h3>Vision-language</h3>
-          <p>Qwen2.5-VL and ChatGPT-4o classify images, predict anomaly boxes, and convert boxes into masks for pixel evaluation.</p>
+          <p>Qwen2.5-VL and GPT-4o classify images, predict anomaly boxes, and convert boxes into masks for pixel evaluation.</p>
         </article>
       </div>
     </section>
@@ -239,7 +239,7 @@
           <div class="result-secondary">
             <span>Pixel-level</span>
             <strong>0.987</strong>
-            <p>VCPCLIP reports the highest mean pixel-level AUROC. CFlow, Reverse Distillation, and PIAD each report 0.984.</p>
+            <p>VCP-CLIP reports the highest mean pixel-level AUROC. CFlow, Reverse Distillation, and PIAD each report 0.984.</p>
           </div>
         </div>
 
@@ -252,11 +252,11 @@
             <tbody>
               <tr><th scope="row">PatchCore</th><td>Feature</td><td class="best">0.833</td><td>0.978</td></tr>
               <tr><th scope="row">EfficientAD</th><td>Feature</td><td>0.803</td><td>0.940</td></tr>
-              <tr><th scope="row">VCPCLIP</th><td>Zero-shot</td><td>0.663</td><td class="best">0.987</td></tr>
+              <tr><th scope="row">VCP-CLIP</th><td>Zero-shot</td><td>0.663</td><td class="best">0.987</td></tr>
               <tr><th scope="row">SplatPose</th><td>3D</td><td>0.524</td><td>0.977</td></tr>
               <tr><th scope="row">PIAD</th><td>3D</td><td>0.634</td><td>0.984</td></tr>
               <tr><th scope="row">Qwen2.5-VL</th><td>VLM</td><td>0.305</td><td>0.538</td></tr>
-              <tr><th scope="row">ChatGPT-4o</th><td>VLM</td><td>0.517</td><td>0.517</td></tr>
+              <tr><th scope="row">GPT-4o</th><td>VLM</td><td>0.517</td><td>0.517</td></tr>
             </tbody>
           </table>
         </div>
