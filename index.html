@@ -186,10 +186,22 @@
           </figure>
         </div>
 
-        <figure class="paper-figure statistics-figure">
-          <img src="assets/figures/dataset-statistics.png" width="1954" height="1062" alt="RAD statistics across object categories and missing, normal, squeezed, scratched, and stained samples" loading="lazy" decoding="async">
-          <figcaption>Category-level defect counts, overall defect distribution, and pixel-wise anomaly ratios.</figcaption>
-        </figure>
+        <div class="evidence-row evidence-copy-first" id="dataset-composition">
+          <aside class="evidence-copy" aria-labelledby="distribution-heading">
+            <span class="evidence-kicker">Dataset composition</span>
+            <h3 id="distribution-heading">One dataset, three reporting views.</h3>
+            <p>The paper reports RAD at category, defect-type, and pixel-coverage levels. The table-derived total contains 1,224 normal and 3,063 anomalous RGB images.</p>
+            <dl class="evidence-facts">
+              <div><dt>Normal</dt><dd>1,224</dd></div>
+              <div><dt>Anomalous</dt><dd>3,063</dd></div>
+              <div><dt>Defect types</dt><dd>4</dd></div>
+            </dl>
+          </aside>
+          <figure class="paper-figure statistics-figure">
+            <img src="assets/figures/dataset-statistics.png" width="1954" height="1062" alt="RAD statistics across object categories and missing, normal, squeezed, scratched, and stained samples" loading="lazy" decoding="async">
+            <figcaption>Category-level defect counts, overall defect distribution, and pixel-wise anomaly ratios.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -199,10 +211,22 @@
         <p>All methods are evaluated for image-level classification and pixel-level localization under unknown test poses.</p>
       </div>
 
-      <figure class="paper-figure pipeline-figure">
-        <img src="assets/figures/pipeline.png" width="1921" height="936" alt="RAD benchmark pipeline from robotic data collection and annotation to 2D, 3D, and vision-language models" loading="lazy" decoding="async">
-        <figcaption>RAD connects robotic multi-view collection and fine-grained annotation to 2D, 3D, and VLM evaluation.</figcaption>
-      </figure>
+      <div class="evidence-row evidence-figure-first" id="evaluation-protocol">
+        <figure class="paper-figure pipeline-figure">
+          <img src="assets/figures/pipeline.png" width="1921" height="936" alt="RAD benchmark pipeline from robotic data collection and annotation to 2D, 3D, and vision-language models" loading="lazy" decoding="async">
+          <figcaption>RAD connects robotic multi-view collection and fine-grained annotation to 2D, 3D, and VLM evaluation.</figcaption>
+        </figure>
+        <aside class="evidence-copy" aria-labelledby="protocol-heading">
+          <span class="evidence-kicker">Evaluation protocol</span>
+          <h3 id="protocol-heading">Unknown pose, paired outputs.</h3>
+          <p>Every family is evaluated for image-level classification and pixel-level localization under pose-agnostic testing.</p>
+          <dl class="evidence-facts">
+            <div><dt>2D</dt><dd>11 methods</dd></div>
+            <div><dt>3D</dt><dd>2 methods</dd></div>
+            <div><dt>VLM</dt><dd>2 models</dd></div>
+          </dl>
+        </aside>
+      </div>
 
       <div class="method-map">
         <article class="method method-feature">
@@ -259,10 +283,22 @@
           </table>
         </div>
 
-        <figure class="paper-figure qualitative-figure">
-          <img src="assets/figures/qualitative.png" width="2134" height="1200" alt="Pixel-wise anomaly localization results for Bowl and Spraybottle across multiple baseline methods" loading="lazy" decoding="async">
-          <figcaption>Ground truth and pixel-wise predictions for Bowl and Spraybottle across representative baselines.</figcaption>
-        </figure>
+        <div class="evidence-row evidence-copy-first qualitative-evidence" id="qualitative-localization">
+          <aside class="evidence-copy" aria-labelledby="qualitative-heading">
+            <span class="evidence-kicker">Qualitative localization</span>
+            <h3 id="qualitative-heading">Predictions beside ground truth.</h3>
+            <p>The paper compares pixel-wise anomaly maps for Bowl and Spraybottle across representative 2D, 3D, and vision-language baselines.</p>
+            <dl class="evidence-facts">
+              <div><dt>Objects</dt><dd>Bowl, Spraybottle</dd></div>
+              <div><dt>Reference</dt><dd>Ground truth</dd></div>
+              <div><dt>Output</dt><dd>Pixel maps</dd></div>
+            </dl>
+          </aside>
+          <figure class="paper-figure qualitative-figure">
+            <img src="assets/figures/qualitative.png" width="2134" height="1200" alt="Pixel-wise anomaly localization results for Bowl and Spraybottle across multiple baseline methods" loading="lazy" decoding="async">
+            <figcaption>Ground truth and pixel-wise predictions for Bowl and Spraybottle across representative baselines.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 

@@ -256,6 +256,10 @@ sup {
 }
 
 .hero {
+  display: grid;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
   padding: 38px 0 46px;
   border-bottom: 1px solid var(--rule);
 }
@@ -595,14 +599,87 @@ figcaption {
   align-self: center;
 }
 
-.statistics-figure {
-  width: min(880px, 82%);
-  margin: clamp(42px, 5vw, 64px) 0 0 auto;
+.evidence-row {
+  display: grid;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--rule);
+  gap: clamp(30px, 4vw, 52px);
 }
 
-.pipeline-figure {
-  width: min(900px, 88%);
-  margin-left: auto;
+.evidence-copy-first {
+  grid-template-columns: minmax(230px, 3.7fr) minmax(0, 8.3fr);
+}
+
+.evidence-figure-first {
+  grid-template-columns: minmax(0, 8.3fr) minmax(230px, 3.7fr);
+}
+
+.evidence-copy {
+  min-width: 0;
+}
+
+.evidence-kicker {
+  color: var(--signal);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.evidence-copy h3 {
+  max-width: 16ch;
+  margin-top: 10px;
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+}
+
+.evidence-copy > p {
+  max-width: 42ch;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.evidence-facts {
+  margin-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.evidence-facts div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+  gap: 14px;
+}
+
+.evidence-facts dt {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.evidence-facts dd {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.statistics-figure,
+.pipeline-figure,
+.qualitative-figure {
+  width: 100%;
+  margin: 0;
 }
 
 .method-map {
@@ -768,13 +845,6 @@ td {
 td.best {
   color: var(--signal);
   font-weight: 800;
-}
-
-.qualitative-figure {
-  width: min(920px, 90%);
-  margin-top: clamp(42px, 5vw, 64px);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .citation-section {
@@ -964,7 +1034,8 @@ pre {
   }
 
   .hero {
-    min-height: 0;
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
     padding: 28px 0 40px;
   }
 
@@ -1093,7 +1164,23 @@ pre {
   }
 
   .statistics-figure {
-    margin-top: 40px;
+    margin-top: 0;
+  }
+
+  .evidence-row,
+  .evidence-copy-first,
+  .evidence-figure-first {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-row {
+    margin-top: 36px;
+    padding-top: 36px;
+    gap: 24px;
+  }
+
+  .evidence-figure-first .evidence-copy {
+    order: -1;
   }
 
   .method-map {

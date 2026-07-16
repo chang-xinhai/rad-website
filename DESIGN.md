@@ -42,7 +42,7 @@ Pure white is an explicit project requirement for the academic canvas. The page 
 
 ### Signature
 
-The hero uses a compact two-column paper-header composition: the full title, authorship, affiliations, and resources sit beside the paper teaser. It avoids poster-scale type and keeps all essential citation context visible in the first viewport.
+The hero fills the first viewport with a compact two-column paper-header composition: the full title, authorship, affiliations, and resources sit beside the paper teaser. The next section begins only after the fold, matching the pacing of the Stream3D reference without copying its visual language.
 
 ## Wireframe
 
@@ -62,13 +62,13 @@ desktop
 | 4,287       13 categories      68 views        4 defect types     |
 +------------------------------------------------------------------+
 | acquisition narrative       | annotation figure                  |
-| dataset figure, full width                                        |
+| composition notes           | dataset statistics figure          |
 +------------------------------------------------------------------+
-| pipeline figure, full width                                       |
+| pipeline figure             | evaluation protocol                |
 | 2D methods, wide lane        | 3D + VLM, stacked                  |
 +------------------------------------------------------------------+
 | image metric rail           | pixel metric rail                   |
-| qualitative figure, full width                                    |
+| qualitative notes           | qualitative figure                 |
 +------------------------------------------------------------------+
 | BibTeX                              paper, code, project links     |
 +------------------------------------------------------------------+
@@ -76,14 +76,14 @@ desktop
 mobile
 +---------------------------+
 | compact nav                |
-| title and actions          |
+| title, authors, actions    |
 | teaser                     |
 | abstract                   |
 | metrics, 2 x 2             |
 | dataset narrative          |
 | annotation figure          |
-| dataset figure             |
-| pipeline                   |
+| dataset notes + figure     |
+| protocol + pipeline       |
 | benchmark lanes stacked    |
 | results and qualitative    |
 | citation                   |
@@ -103,7 +103,7 @@ mobile
 - Initial instinct: blue as a technical accent. That would blend into many 3D project pages and the robot imagery.
 - Revision: use a restrained anomaly red derived from the paper figures, with cool neutral surfaces.
 - Risk: experimental asymmetry can reduce skim speed. Countermeasure: keep navigation labels conventional, stack section headings vertically, and collapse every multi-column section explicitly on mobile.
-- Risk: a long page can repeat image-and-text splits. Countermeasure: alternate layout families: split hero, prose block, metric rail, acquisition mosaic, full-width pipeline, asymmetric method map, result matrix, citation console.
+- Risk: standalone paper figures can feel detached and create empty side margins. Countermeasure: reuse one evidence-row system that pairs each major figure with source-backed context and compact facts.
 
 ## Content source notes
 
