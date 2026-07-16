@@ -17,7 +17,7 @@
   --body: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono: "SFMono-Regular", "IBM Plex Mono", Consolas, "Liberation Mono", monospace;
   --radius: 14px;
-  --page: min(1100px, calc(100vw - 96px));
+  --page: min(960px, calc(100vw - 96px));
   --header-height: 64px;
 }
 
@@ -287,7 +287,7 @@ sup {
 .hero-title {
   display: block;
   max-width: none;
-  font-size: clamp(1.7rem, 2.05vw, 2rem);
+  font-size: clamp(2.25rem, 3vw, 2.75rem);
   line-height: 1.12;
 }
 
@@ -436,7 +436,7 @@ figcaption {
 .section-heading h2 {
   max-width: 24ch;
   font-family: var(--display);
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(1.75rem, 2.4vw, 2.15rem);
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.12;
@@ -500,7 +500,7 @@ figcaption {
 .fact strong {
   display: block;
   font-family: var(--display);
-  font-size: clamp(2rem, 3.3vw, 3rem);
+  font-size: clamp(1.95rem, 2.6vw, 2.35rem);
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 1;
@@ -608,6 +608,12 @@ figcaption {
   gap: clamp(30px, 4vw, 52px);
 }
 
+.evidence-row-leading {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .evidence-copy-first {
   grid-template-columns: minmax(230px, 3.7fr) minmax(0, 8.3fr);
 }
@@ -629,14 +635,22 @@ figcaption {
   text-transform: uppercase;
 }
 
+.evidence-copy h2,
 .evidence-copy h3 {
   max-width: 16ch;
   margin-top: 10px;
   font-family: var(--display);
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.12;
+}
+
+.evidence-copy h2 {
+  font-size: clamp(1.65rem, 2.2vw, 2rem);
+}
+
+.evidence-copy h3 {
+  font-size: clamp(1.3rem, 1.8vw, 1.6rem);
 }
 
 .evidence-copy > p {
@@ -775,14 +789,14 @@ figcaption {
   margin-top: 18px;
   color: var(--signal);
   font-family: var(--display);
-  font-size: clamp(3rem, 5.5vw, 4.8rem);
+  font-size: clamp(2.1rem, 2.8vw, 2.45rem);
   font-weight: 600;
   letter-spacing: -0.075em;
   line-height: 0.9;
 }
 
 .result-secondary strong {
-  font-size: clamp(3rem, 5vw, 4.3rem);
+  font-size: clamp(2.05rem, 2.7vw, 2.35rem);
 }
 
 .result-primary p,
@@ -933,7 +947,7 @@ pre {
 
 @media (max-width: 1080px) {
   :root {
-    --page: min(100% - 48px, 1100px);
+    --page: min(100% - 48px, 960px);
   }
 
   .nav-shell {
@@ -954,12 +968,12 @@ pre {
   }
 
   .hero-title {
-    font-size: clamp(1.7rem, 2.4vw, 2rem);
+    font-size: clamp(2.1rem, 3.2vw, 2.45rem);
   }
 
   .result-primary strong,
   .result-secondary strong {
-    font-size: clamp(3rem, 6vw, 4.4rem);
+    font-size: clamp(1.95rem, 3vw, 2.25rem);
   }
 }
 
@@ -1051,7 +1065,7 @@ pre {
 
   .hero-title {
     max-width: none;
-    font-size: clamp(1.6rem, 7vw, 2rem);
+    font-size: clamp(1.8rem, 7.4vw, 2rem);
     line-height: 1.1;
   }
 
@@ -1111,7 +1125,7 @@ pre {
 
   .section-heading h2 {
     max-width: 24ch;
-    font-size: clamp(1.75rem, 8vw, 2.2rem);
+    font-size: clamp(1.6rem, 6.4vw, 1.75rem);
   }
 
   .abstract-layout {
@@ -1141,7 +1155,7 @@ pre {
   }
 
   .fact strong {
-    font-size: clamp(2rem, 10vw, 2.7rem);
+    font-size: clamp(1.7rem, 7vw, 1.85rem);
   }
 
   .fact small {
@@ -1205,7 +1219,7 @@ pre {
 
   .result-primary strong,
   .result-secondary strong {
-    font-size: clamp(2.8rem, 15vw, 3.6rem);
+    font-size: clamp(1.65rem, 6.5vw, 1.85rem);
   }
 
   th,

@@ -206,20 +206,15 @@
     </section>
 
     <section class="benchmark-section section page-shell" id="benchmark" aria-labelledby="benchmark-heading">
-      <div class="section-heading">
-        <h2 id="benchmark-heading">One benchmark, three method families</h2>
-        <p>All methods are evaluated for image-level classification and pixel-level localization under unknown test poses.</p>
-      </div>
-
-      <div class="evidence-row evidence-figure-first" id="evaluation-protocol">
+      <div class="evidence-row evidence-figure-first evidence-row-leading" id="evaluation-protocol">
         <figure class="paper-figure pipeline-figure">
           <img src="assets/figures/pipeline.png" width="1921" height="936" alt="RAD benchmark pipeline from robotic data collection and annotation to 2D, 3D, and vision-language models" loading="lazy" decoding="async">
           <figcaption>RAD connects robotic multi-view collection and fine-grained annotation to 2D, 3D, and VLM evaluation.</figcaption>
         </figure>
-        <aside class="evidence-copy" aria-labelledby="protocol-heading">
+        <aside class="evidence-copy" aria-labelledby="benchmark-heading">
           <span class="evidence-kicker">Evaluation protocol</span>
-          <h3 id="protocol-heading">Unknown pose, paired outputs.</h3>
-          <p>Every family is evaluated for image-level classification and pixel-level localization under pose-agnostic testing.</p>
+          <h2 id="benchmark-heading">One benchmark, three method families</h2>
+          <p>All methods are evaluated for image-level classification and pixel-level localization under unknown test poses.</p>
           <dl class="evidence-facts">
             <div><dt>2D</dt><dd>11 methods</dd></div>
             <div><dt>3D</dt><dd>2 methods</dd></div>
