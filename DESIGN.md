@@ -16,19 +16,19 @@ Mode: greenfield.
 
 | Token | Light | Dark | Purpose |
 | --- | --- | --- | --- |
-| Canvas | `#F4F6F8` | `#101418` | Cool laboratory neutral |
-| Surface | `#E9EDF1` | `#192027` | Figure frames and quiet grouping |
-| Ink | `#151A1F` | `#ECF0F3` | Primary text |
-| Muted | `#5E6872` | `#A7B0B8` | Secondary text |
-| Rule | `#C7CED5` | `#35404A` | Structural separators |
+| Canvas | `#FCFCFA` | `#101418` | Academic warm white, explicitly light by default |
+| Surface | `#F4F3EF` | `#192027` | Figure frames and quiet grouping |
+| Ink | `#1D1D1C` | `#ECF0F3` | Primary text |
+| Muted | `#65635F` | `#A7B0B8` | Secondary text |
+| Rule | `#D8D6D0` | `#35404A` | Structural separators |
 | Signal | `#B83E38` | `#DE706A` | The one accent, tied to anomaly marks |
 
 No pure black, pure white, neon glow, or multi-accent gradients.
 
 ### Type
 
-- Display: `Avenir Next`, then `Helvetica Neue`, for compact geometric headlines.
-- Body: `Avenir Next`, then platform sans-serif, for technical clarity.
+- Display: `Iowan Old Style`, then `Palatino`, `Georgia`, or a platform serif. It is reserved for paper titles, section headings, abstract statements, and benchmark numbers.
+- Body and UI: `Avenir Next`, then `Helvetica Neue` or a platform sans-serif, for technical clarity.
 - Utility and data: `SFMono-Regular`, then `IBM Plex Mono` or platform monospace.
 - One type family carries the page. Monospace is reserved for metrics, code, and metadata.
 

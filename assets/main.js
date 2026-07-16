@@ -3,20 +3,20 @@
 
   const root = document.documentElement;
   const themeButton = document.querySelector('.theme-toggle');
-  const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
   const effectiveTheme = () => {
     const selected = root.dataset.theme;
     if (selected === 'dark' || selected === 'light') return selected;
-    return colorScheme.matches ? 'dark' : 'light';
+    return 'light';
   };
 
   const updateThemeControl = () => {
     if (!themeButton) return;
-    const nextTheme = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    const currentTheme = effectiveTheme();
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
     const label = `${nextTheme[0].toUpperCase()}${nextTheme.slice(1)}`;
     themeButton.textContent = label;
     themeButton.setAttribute('aria-label', `Switch to ${nextTheme} mode`);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', currentTheme === 'dark' ? '#101418' : '#FCFCFA');
   };
 
   const savedTheme = localStorage.getItem('rad-theme');
@@ -31,8 +31,6 @@
     localStorage.setItem('rad-theme', nextTheme);
     updateThemeControl();
   });
-
-  colorScheme.addEventListener?.('change', updateThemeControl);
 
   const menuButton = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.primary-nav');
