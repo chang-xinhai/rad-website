@@ -128,7 +128,7 @@
     </section>
 
     <section class="abstract-section section page-shell" id="abstract" aria-labelledby="abstract-heading">
-      <div class="section-heading">
+      <div class="section-heading section-heading-centered">
         <h2 id="abstract-heading">Inspection outside the lab</h2>
       </div>
       <div class="abstract-layout">
@@ -162,7 +162,7 @@
 
     <section class="dataset-section section" id="dataset" aria-labelledby="dataset-heading">
       <div class="page-shell">
-        <div class="section-heading">
+        <div class="section-heading section-heading-split">
           <h2 id="dataset-heading">A robot moves. The object stays.</h2>
           <p>Dense views expose appearance changes that fixed-camera datasets leave out.</p>
         </div>
@@ -226,9 +226,23 @@
 
       <div class="method-map">
         <article class="method method-feature">
-          <h3>2D feature-based</h3>
-          <p>Eight unsupervised methods plus three CLIP-based zero-shot variants, evaluated with standard Anomalib configurations where applicable.</p>
-          <p class="method-list">CFlow, EfficientAD, FastFlow, PaDiM, PatchCore, Reverse Distillation, STFPM, UFlow, WinCLIP, AdaCLIP, VCP-CLIP</p>
+          <div class="method-feature-summary">
+            <h3>2D feature-based</h3>
+            <p>Eight unsupervised methods plus three CLIP-based zero-shot variants, evaluated with standard Anomalib configurations where applicable.</p>
+          </div>
+          <ul class="method-list" aria-label="Evaluated 2D methods">
+            <li>CFlow</li>
+            <li>EfficientAD</li>
+            <li>FastFlow</li>
+            <li>PaDiM</li>
+            <li>PatchCore</li>
+            <li>Reverse Distillation</li>
+            <li>STFPM</li>
+            <li>UFlow</li>
+            <li>WinCLIP</li>
+            <li>AdaCLIP</li>
+            <li>VCP-CLIP</li>
+          </ul>
         </article>
         <article class="method method-3d">
           <h3>3D reconstruction</h3>
@@ -243,7 +257,7 @@
 
     <section class="results-section section" id="results" aria-labelledby="results-heading">
       <div class="page-shell">
-        <div class="section-heading">
+        <div class="section-heading section-heading-split">
           <h2 id="results-heading">2D leads detection. Localization is closer.</h2>
           <p>Reported mean AUROC from the v4 paper tables.</p>
         </div>
