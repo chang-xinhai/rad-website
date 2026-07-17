@@ -485,6 +485,14 @@ figcaption {
   margin-inline: auto;
 }
 
+@media (min-width: 768px) {
+  .dataset-section .section-heading-centered h2,
+  .dataset-section .section-heading-centered p {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
 .abstract-section {
   border-top: 1px solid var(--rule);
 }
