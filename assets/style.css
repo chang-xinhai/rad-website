@@ -481,24 +481,8 @@ figcaption {
   margin-inline: auto;
 }
 
-.section-heading-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  max-width: none;
-  gap: clamp(32px, 5vw, 56px);
-}
-
-.section-heading-split h2 {
-  max-width: 18ch;
-  margin-left: auto;
-  text-align: right;
-}
-
-.section-heading-split p {
-  max-width: 36ch;
-  margin-top: 0;
-  text-align: left;
+.section-heading-centered p {
+  margin-inline: auto;
 }
 
 .abstract-section {
@@ -820,8 +804,10 @@ figcaption {
 
 .result-highlights {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
+  width: min(100%, 800px);
+  margin-inline: auto;
   gap: 1px;
   background: var(--rule);
   border: 1px solid var(--rule);
@@ -1183,19 +1169,6 @@ pre {
 
   .section-heading {
     margin-bottom: 28px;
-  }
-
-  .section-heading-split {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .section-heading-split h2,
-  .section-heading-split p {
-    max-width: 28ch;
-    margin-inline: auto;
-    text-align: center;
   }
 
   .section-heading h2 {
