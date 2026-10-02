@@ -22,18 +22,18 @@ Open [http://localhost:4173](http://localhost:4173).
 
 ## Content and figures
 
-All scientific claims, author order, benchmark values, and paper figures are sourced from arXiv v4. The teaser is copied without modification. PDF figures are rendered to web-ready PNG files without changing their content.
+Scientific claims, benchmark values, and paper figures are sourced from arXiv v4. Author order was updated against arXiv v7 on October 3, 2026; the first four authors (Xinhai Chang, Kaichen Zhou, Taewhan Kim, and Jiadong Zhang) carry equal-contribution markers as confirmed by Xinhai Chang. The teaser is copied without modification. PDF figures are rendered to web-ready PNG files without changing their content.
 
 The v4 source has an image-count inconsistency: the dataset prose states 5,848, while the category table and comparison table both resolve to 1,224 normal plus 3,063 abnormal images, or 4,287 total. The website uses the internally consistent table-derived total.
 
-Only the unambiguous equal-contribution and corresponding-author markers are shown. Institutions are presented as an unnumbered collaboration list because the source affiliation footnote includes a conflicting unused index.
+The first four authors are marked as equal contributors; Ye Zhu retains the corresponding-author marker. Institutions are presented as an unnumbered collaboration list because the source affiliation footnote includes a conflicting unused index.
 
 ## Citation
 
 ```bibtex
-@misc{zhou2024rad,
+@misc{chang2024rad,
   title   = {RAD: A Realistic Multi-View Benchmark for Pose-Agnostic Anomaly Detection},
-  author  = {Zhou, Kaichen and Chang, Xinhai and Kim, Taewhan and Zhang, Jiadong and Cao, Yang and Peng, Chufei and Zhan, Fangneng and Zhao, Hao and Dong, Hao and Ting, Kai Ming and Zhu, Ye},
+  author  = {Chang, Xinhai and Zhou, Kaichen and Kim, Taewhan and Zhang, Jiadong and Cao, Yang and Peng, Chufei and Zhan, Fangneng and Zhao, Hao and Dong, Hao and Ting, Kai Ming and Zhu, Ye},
   year    = {2024},
   eprint  = {2410.00713},
   archivePrefix = {arXiv},
